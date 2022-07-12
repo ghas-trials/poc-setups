@@ -1,0 +1,10 @@
+- description: Experimental security queries for Python
+- queries: .
+  from: codeql/python-queries
+- include:
+    kind:
+      - problem
+      - path-problem
+    query path:
+      - /^experimental\/Security\/.*/
+    tags contain: security

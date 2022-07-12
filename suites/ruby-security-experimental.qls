@@ -1,0 +1,10 @@
+- description: Experimental security queries for Ruby
+- queries: .
+  from: codeql/ruby-queries
+- include:
+    query path:
+      - /^experimental\/.*/
+    kind:
+      - problem
+      - path-problem
+    tags contain: security
